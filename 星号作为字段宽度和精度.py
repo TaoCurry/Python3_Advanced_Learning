@@ -2,7 +2,6 @@
 # -*- coding:utf-8 -*-
 """
 使用指定宽度打印格式化后的价格表
-1
 """
 __author__ = "Curry"
 
@@ -21,7 +20,7 @@ print(_format % (item_width, 'Orange', price_width, 9.999))
 print('=' * width)
 
 
-
+# result
  please enter width: 35
  ===================================
  Item                          Price
@@ -30,4 +29,3 @@ print('=' * width)
  Pears                          0.50
  Orange                        10.00
  ===================================
-11
