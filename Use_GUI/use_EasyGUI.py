@@ -11,6 +11,7 @@ __author__ = "Curry"
 # print(user_response)
 # OK
 
+
 import easygui
 flavor = easygui.buttonbox('What\'s your favorte ice cream flavor?', choices= ['Vanilla', 'Chocolate', 'Strawberry'])
 easygui.msgbox('You picked ' + flavor)
