@@ -7,7 +7,7 @@ __author__ = "Curry"
 # model 1
 import easygui
 user_response = easygui.msgbox('Hello World!')
-easygui.msgbox()创建一个消息框
+# easygui.msgbox()创建一个消息框
 print(user_response)
 # OK
 
