@@ -37,13 +37,13 @@ str.isalpha()   #检查字符串是否由字母组成
 str.isdecimal()   #检查字符串是否是十进制数组成
 str.isdigit()   #检查字符串是否由数字组成
 str.isidentifier()  #
-str.islower()   #检查字符串
+str.islower()   #检查字符串是否是小写字母
 str.isnumeric() #检查字符串是否只包含数字字符
-str.isprintable()   #
+str.isprintable()   #检查字符串是否可以打印
 str.isspace()   #检查字符串是否由空格组成
 str.istitle()   #检查字符串是否是标题化的
-str.isupper()   #
-str.join(iterable)
+str.isupper()   #检查字符串是否是大写字母
+str.join(iterable)  #将一个可迭代的序列按照一定的字符串格式输出，其中被连接的序列元素都必须是字符串
 str.ljust(width[, fillchar] #返回一个原字符串左对齐,并使用空格填充至长度 width 的新字符串
 str.lower()  #转换字符串中所有大写字符为小写.
 str.lstrip([chars]) #返回一个字符串副本，其中所有的chars（默认空白字符）都被从字符串左边开始处去除。
@@ -64,14 +64,16 @@ str.split(sep=None, maxsplit=-1)    #返回字符串中所有单词的列表(lis
 ...['1', '2', '3', '4', '5']
 
 str.splitlines([keepends])
-str.startswith(prefix[, start[, end]])
+str.startswith(prefix[, start[, end]])  #检查字符串是否以suffix开始，如果是，返回True，如果不是，返回False，可以指定起始位置
 str.strip([chars])  #返回一个字符串副本，其中所有的chars（默认空白字符）都被从字符串开始和结尾处去除,左右两侧，中间的字符串无法执行此项操作。
 # example
 >>>'***SPAM* for * everyone!!!'.strip('*!')
 ...'SPAM* for * everyone'
 str.swapcase()  #返回字符串副本，其中所有的单词都交换大小写
-str.title()     #返回字符串的副本，其中单次都以大写字母开头
-str.translate(table)
-str.upper()
+>>> 'cURRY'.swapcase()
+...'Curry'
+str.title()     #返回字符串的副本，其中单词都以大写字母开头
+str.translate(table)    # 通过str.maketrans方法得到一个转换表，然后按照转换表进行字符串转换
+str.upper()     #返回字符串副本，其中单词全都是大写字母
 str.zfill(width)    #在str的左侧以0填充width个字符
 
