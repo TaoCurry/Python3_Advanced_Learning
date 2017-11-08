@@ -25,13 +25,18 @@ NameError: name 'x' is not defined
 >>> y
 [1, 2, 3]
 
-exec语句：动态执行一段语句块或函数。
+exec语句：动态执行一段语句块或函数,不返回任何对象。
 >>> exec('if True: print(100)')
 100
->>> exec('''''')
 >>> exec('''
 x = 200
 if x > 100:
 	print(x + 200)
 	''')
 400
+
+eval语句：计算并返回以字符串形式表示的Python表达式的结果。
+>>> x = 2
+>>> eval('x + 2')
+4
+
