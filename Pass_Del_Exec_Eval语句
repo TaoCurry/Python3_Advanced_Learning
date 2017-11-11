@@ -1,0 +1,42 @@
+pass语句：程序暂时不需要执行任务，可以使用pass语句作为占位符使用
+# example
+if name == 'Curry':
+	print('MVP!')
+elif name == 'KD':
+	'''
+	暂时不做处理
+	'''
+	pass
+else name == 'Lebron!':
+	print('King!')
+
+del语句：del语句删除的只是名称，而不是对象本身的值。事实上，Python中是没有办法删除值的（在某个值不再使用的时候，Python解释器会负责内存的回收）。
+>>> x = 1
+>>> del x
+>>> x
+Traceback (most recent call last):
+  File "<pyshell#75>", line 1, in <module>
+    x
+NameError: name 'x' is not defined
+
+>>> x1 = [1, 2, 3]
+>>> y = x1
+>>> del x1
+>>> y
+[1, 2, 3]
+
+exec语句：动态执行一段语句块或函数,不返回任何对象。
+>>> exec('if True: print(100)')
+100
+>>> exec('''
+x = 200
+if x > 100:
+	print(x + 200)
+	''')
+400
+
+eval语句：计算并返回以字符串形式表示的Python表达式的结果。
+>>> x = 2
+>>> eval('x + 2')
+4
+
