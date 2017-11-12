@@ -22,7 +22,7 @@ if __debug__:
 # example
 age = 10
 assert 0 < age < 10, 'age must between 0 to 10!'
-# Traceback (most recent call last):
-#  File "<pyshell#5>", line 1, in <module>
-#    assert 0 < age < 10, 'age must between 0 - 10'
-# AssertionError: age must between 0 - 10
+ Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    assert 0 < age < 10, 'age must between 0 - 10'
+ AssertionError: age must between 0 - 10
