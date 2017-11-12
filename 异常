@@ -1,0 +1,33 @@
+Python用异常对象(exception object)来表示异常情况。遇到错误后，会引发异常。如果异常对象未被捕捉或者处理，程序就会用所谓的回溯(traceback,一种错误信息)终止执行。
+
+>>> 1/0
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    1/0
+ZeroDivisionError: division by zero
+
+# 为了引发异常，可以使用一个类(应该是Exception的子类）或者实例参数调用raise语句。
+>>> raise Exception 	# 内建的Exception类
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    raise Exception
+Exception
+>>> rasie Exception('ll')
+SyntaxError: invalid syntax
+>>> raise Exception('xx')
+
+一些比较重要的内建异常类：
+Exception                      所有异常的基类
+AttributeError				   特性引用或赋值失败引发
+IOError						   试图打开不存在文件（包括其他情况）时引发
+IndexError					   在使用序列中不存在的索引时引发
+KeyError					   在使用映射中不存在的键时引发
+NameError					   在找不到名字（变量）时引发
+SyntaxError					   在代码为错误形式时引发，一般是缩进问题导致
+TypeError					   在内建操作或者函数应用于错误类型的对象时引发
+ValueError					   在内建操作或者函数应用于正确类型的对象，但是该对象使用不合适的值时引发
+ZeroDivisionError			   在除法或者模操作的第二个参数为0时引发
+
+自定义异常类：和其他类一样，只是要确保从Exception类继承。
+class SomeCustomException(Exception):
+	pass
