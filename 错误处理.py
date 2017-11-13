@@ -20,7 +20,7 @@ def main():
     try:
         bar('0')
     except Exception as e:
-        logging.exception(e)
+        logging.exceptidequeon(e)
 
 
 main()
